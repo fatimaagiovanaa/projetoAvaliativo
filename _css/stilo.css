@@ -1,9 +1,25 @@
+
+body{
+ 
+		background-color: lightblue;
+} 
+
+img {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 h1{
         text-align: center;
-         background-color: gray;
+         background-color: seashell ;
+    }
+    h2 {
+    	text-align: center;
+    	background: whitesmoke;
     }
         p {
             text-align: left;
-            font-family: cursive;
+            font-family: serif;
             font-size:150%;
         }
