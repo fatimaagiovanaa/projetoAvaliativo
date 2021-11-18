@@ -1,7 +1,7 @@
 
 body{
  
-		background-color: lightblue;
+		background-color:  lightcyan;
 } 
 
 img {
@@ -12,14 +12,15 @@ img {
 }
 h1{
         text-align: center;
-         background-color: seashell ;
+         background-color: midnightblue ;
+         color: white;
     }
     h2 {
     	text-align: center;
-    	background: whitesmoke;
+    	background: lightblue;
     }
         p {
-            text-align: left;
+            text-align: justify;
             font-family: serif;
             font-size:150%;
         }
