@@ -5,15 +5,15 @@ Inicio: Função de verificação dos campos do formulário
 function verificar(){
 	var nome = document.getElementById('nome').value;
 	var email = document.getElementById('email').value;
-	var dtnasc = document.getElementById('datadenascimento').value;
+	var dtnasc = document.getElementById('dtnasc').value;
 	var fone = document.getElementById('fone').value;
 	var cpf = document.getElementById('cpf').value;
-	var senha = document.getElementById('senha').value;
-	var PJ = document.getElementById('pessoajuridica').value;
-	var PF = document.getElementById('pessoafisica').value;
+	var senha = document.getElementById('senha').value;	
 	var genero = document.getElementById('genero').value;
 
-	if(!nome || !email || !dtnasc || !fone || !cpf || !senha || !PF || !PJ || !genero){
+
+	
+	if(!nome || !email  || !dtnasc || !fone || !cpf || !senha || !genero){
 		alert("Campos não preenchidos, favor preenche-los");
 	} else{
 		alert("Campos preenchidos com sucesso");
@@ -21,7 +21,7 @@ function verificar(){
 }
 /*##############
 Final: Função de verificação dos campos do formulário
-*/
+
 
 
  /*#############
@@ -30,7 +30,7 @@ Final: Função de verificação dos campos do formulário
 
 
 function  maskFone(){
-	var numeroAtual = documnt.getElementById('fone').value;
+	var numeroAtual = document.getElementById('fone').value;
 	const isCelular = numeroAtual.length === 11;
 	const isFone = numeroAtual.length === 10;
 	let numeroAjustado;
@@ -46,7 +46,7 @@ function  maskFone(){
 		numeroAjustado = `(${part1}) ${part2}-${part3}`
 	} else{
 		numeroAtual.value = ' ';
-		alert("Número informato é incorreto, favor verificar!");
+		alert("Número informado é incorreto, favor verificar!");
 	}
 	fone.value = numeroAjustado;
 }

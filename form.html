@@ -9,10 +9,10 @@
 <body>
 
     <h1>FORMULÁRIO</h1>
-  <hr>
-    <h2><a href="conteudo.html">Voltar</a></h2>
-  <hr>
-    <form>
+    <hr>
+    <h2><a href="etnocentrismo.html">Voltar</a></h2>
+    <hr>
+    <form method="post">
     <p> NOME </p>
     <input id="nome" type="text" name="nome" placeholder="Informe seu nome...">
         <p>GENERO</p> 
@@ -22,49 +22,28 @@
         <option value="2">Feminino</option>
         <option value="3">Outro</option>
         </select>
-        <p>DATA DE NASCIMENTO</p>
-        <input id="datadenascimento" type="date" name="dtNasc" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Informe sua data de nascimento...">
-
-
-
-        <p>FONE</p>
-        <input id="fone" type="text" onblur="maskFone()" name="cel" placeholder="Informe seu telefone...">
-
-
-
-
-        
-
-       <p>TIPO DE PESSOA</p>
-        <div class="form-check">
-          <input id="pessoafisica" class="form-check-input" type="checkbox" value="" checked>
-         <label class="form-check-label" for="flexCheckDefault"> Pessoa Fisica </label>
-       </div>
-  <div class="form-check">
-  <input id="pessoajuridica" class="form-check-input" type="checkbox" value="" >
-  <label class="form-check-label" for="flexCheckChecked">
-  Pessoa Juridica
-  </label>
-  </div>
-        <p>CPF</p>
-        <input id="cpf" type="cpf" name="cpf" placeholder="Informe seu CPF...">
-        <div class="col-md-4"><br>
-             <div class="col-12">     
-        <p>E-MAIL</p>
-        <input id="email" type="email" name="email" placeholder="Informe seu e-mail...">
+    <p>DATA DE NASCIMENTO</p>
+    <input id="dtnasc" type="date" name="dtNasc" class="form-control" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Informe sua data de nascimento...">
+  <p>FONE</p>
+  <input id="fone" type="text" onblur="maskFone()" name="cel" placeholder="Informe seu telefone...">
+    <p>CPF</p>
+    <input id="cpf" type="cpf" name="cpf" placeholder="Informe seu CPF...">
+    <div class="col-md-4"><br>
+    <div class="col-12">     
+            <p>E-MAIL</p>
+            <input id="email" type="email" name="email" placeholder="Informe seu e-mail...">
         <p>SENHA</p>
-         <div class="mb-3">
+        <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label"></label>
     <input id="senha" type="password" class="form-control" placeholder="Informe sua senha...">
-  </div>
-            <br>
-    <p>ESTADO</p>
+    </div>
     <br>
-
-    <select id="estado" class="form-select">
-      <option selected>Selecione</option>
-      <option>Acre (AC)</option>
-      <option>Alagoas (AL)</option>
+      <p>ESTADO</p>
+       <br>
+       <select id="estado" class="form-select">
+       <option selected>Selecione</option>
+       <option>Acre (AC)</option>
+       <option>Alagoas (AL)</option>
        <option>Amapá (AP)</option>
        <option>Amazonas (AM)</option>
        <option>Bahia (BA)</option>
@@ -102,7 +81,7 @@
         <p>CEP</p>
         <input id="cep" type="cep" name="cep" placeholder="Informe seu CEP...">   
         <p>ASSUNTO</p>
-        <input id="ASSUNTO" type="text" name="descrição">
+        <input id="ASSUNTO" type="text" name="descricao">
         <p></p>
        
         <p>DETALHES</p>
@@ -114,7 +93,7 @@
         <label class="form-check-label" for="flexCheckChecked">
            Aceito receber notificações
         </label> <br></br>
-                <button class="btn btn-primary" onclick="verificar()" nome="cadastrar">Cadastrar</button>
+                <button onclick="verificar()" nome="cadastrar">Cadastrar</button>
 
     </form> 
 </body>
